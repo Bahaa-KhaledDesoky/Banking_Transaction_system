@@ -1,9 +1,8 @@
 # Banking transaction system 
 ## this project is a dotnet webapi to make cash transaction using :
+### - dotnet core webapi
 ### - entity framework
 ### - Jwt authentication
 ### - SqlServer
 ### - passwordHashing && passwordSalt technique
 
-this is major points that I use
-And I will talk it step by step
