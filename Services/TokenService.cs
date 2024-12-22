@@ -28,7 +28,7 @@ namespace Banking_system.Services
             var tokenDes = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddSeconds(60),
+                Expires = DateTime.Now.AddDays(7),
                 SigningCredentials = creds
 
             };
