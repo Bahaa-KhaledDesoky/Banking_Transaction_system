@@ -1,7 +1,7 @@
 <h1>Banking transaction system </h1>
 this project is a dotnet webapi to make cash transaction using
 
-1- entity framework
+[entity framework]
 2- Jwt authentication
 3- SqlServer
 4- passwordHashing && passwordSalt technique
