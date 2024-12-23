@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace Banking_system.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [Authorize]
     public class CashController : Controller
     {
@@ -53,20 +53,28 @@ namespace Banking_system.Controllers
             }
             var senderBalance = sender.balanc;
             var receiverBalance = receiver.balanc;
+            var transaction =new Transaction{
+
+                senderId = sender.id,
+                receiverId = receiver.id,
+                time = DateTime.UtcNow,
+                mountOfTransaction= requestToSendCash.cash
+            };
+           
             try
             {
                 sender.balanc -= requestToSendCash.cash;
                 receiver.balanc += requestToSendCash.cash;
+
+                await _context.transaction.AddAsync(transaction);
                 await _context.SaveChangesAsync();
 
+                return Ok(transaction);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                return BadRequest(ex);
+                return BadRequest(new { message = ex.Message, details = ex.InnerException?.Message });
             }
-            
-
-            return Ok(sender);
         }
 
     }

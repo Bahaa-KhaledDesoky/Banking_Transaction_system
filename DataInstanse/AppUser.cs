@@ -15,6 +15,8 @@ namespace Banking_system.DataInstanse
         public byte[] passwordHash  { get; set; }
         public byte[] passwordSalt { get; set; }
         public int balanc { get; set; }=10000;
+        public List<Transaction> send { get; set; }
+        public List<Transaction> receive { get; set; }
 
     }
 }

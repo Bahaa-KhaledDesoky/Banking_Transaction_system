@@ -17,7 +17,7 @@ using Microsoft.Extensions.Logging;
 namespace Banking_system.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class UserController : Controller
     {
         private readonly ILogger<UserController> _logger;
