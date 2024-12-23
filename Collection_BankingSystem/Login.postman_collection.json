@@ -23,7 +23,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:5026/User/login"
+				"url": "http://localhost:5026/api/User/login"
 			},
 			"response": []
 		}

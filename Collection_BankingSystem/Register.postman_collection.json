@@ -20,7 +20,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:5026/User/register"
+				"url": "http://localhost:5026/api/User/register"
 			},
 			"response": []
 		},
@@ -38,7 +38,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:5026/User/register"
+				"url": "http://localhost:5026/api/User/register"
 			},
 			"response": []
 		}

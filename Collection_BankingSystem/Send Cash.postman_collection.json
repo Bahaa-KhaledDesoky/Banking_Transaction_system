@@ -26,7 +26,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:5026/Cash/sendCash"
+				"url": "http://localhost:5026/api/Cash/sendCash"
 			},
 			"response": []
 		}
