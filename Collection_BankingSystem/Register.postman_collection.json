@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "a6bb271e-8fe9-40b6-a802-a69cd291a626",
+		"name": "Register",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28315240"
+	},
+	"item": [
+		{
+			"name": "Register user 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"mark\",\r\n\"userName\":\"mark_1\",\r\n\"Phone\":\"0100000\",\r\n\"address\":\"12 st moharm \",\r\n\"password\":\"0123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5026/api/User/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Register user 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"ron\",\r\n\"userName\":\"ron_1\",\r\n\"Phone\":\"0100000\",\r\n\"address\":\"12 st moharm \",\r\n\"password\":\"0123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5026/api/User/register"
+			},
+			"response": []
+		}
+	]
+}

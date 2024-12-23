@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "ad93caab-a046-42fd-8e2f-6a2bcd78d9d0",
+		"name": "Transaction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28315240"
+	},
+	"item": [
+		{
+			"name": "Get All Transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJyb24iLCJuYmYiOjE3MzQ5MzE4ODAsImV4cCI6MTczNTUzNjY4MCwiaWF0IjoxNzM0OTMxODgwfQ.gamZxLwP2CnjL_WbNYh6JgaZ3BZk77tdVbJa3iAjqPC4SDzpHApqKob4fD_R5MvmaNrWwL0xAEmk9_og2N-Hlg"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhZG1pbiIsIm5iZiI6MTczNDQ3NzE3MiwiZXhwIjoxNzM1MDgxOTcyLCJpYXQiOjE3MzQ0NzcxNzJ9.vKetChfqUEuUJi8mM_tWZfaZm6aqQxMSZdlQdomgRnyshtSomJo7QZJhyNnzLRO5rJVj3XoSyMolnwqVn6B1wA",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:5026/api/TransactionRecord/AllTransaction,mark_1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get SendTransaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJyb24iLCJuYmYiOjE3MzQ5MzE4ODAsImV4cCI6MTczNTUzNjY4MCwiaWF0IjoxNzM0OTMxODgwfQ.gamZxLwP2CnjL_WbNYh6JgaZ3BZk77tdVbJa3iAjqPC4SDzpHApqKob4fD_R5MvmaNrWwL0xAEmk9_og2N-Hlg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5026/api/TransactionRecord/sendTransaction,mark_1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get receiveTransaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJyb24iLCJuYmYiOjE3MzQ5MzE4ODAsImV4cCI6MTczNTUzNjY4MCwiaWF0IjoxNzM0OTMxODgwfQ.gamZxLwP2CnjL_WbNYh6JgaZ3BZk77tdVbJa3iAjqPC4SDzpHApqKob4fD_R5MvmaNrWwL0xAEmk9_og2N-Hlg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5026/api/TransactionRecord/receiveTransaction,mark_1"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJyb24iLCJuYmYiOjE3MzQ5MzE4ODAsImV4cCI6MTczNTUzNjY4MCwiaWF0IjoxNzM0OTMxODgwfQ.gamZxLwP2CnjL_WbNYh6JgaZ3BZk77tdVbJa3iAjqPC4SDzpHApqKob4fD_R5MvmaNrWwL0xAEmk9_og2N-Hlg"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
