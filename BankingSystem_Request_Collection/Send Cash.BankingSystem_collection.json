@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "7ea3fade-c4ec-43bc-9d40-d09103a945df",
+		"name": "Send Cash",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28315240"
+	},
+	"item": [
+		{
+			"name": "User 2 send cash to user 1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJyb24iLCJuYmYiOjE3MzQ4MzY2NzAsImV4cCI6MTczNTQ0MTQ2OSwiaWF0IjoxNzM0ODM2NjcwfQ.xfUlTkHYaVTlMZxXKHtk3dxRNMaYQXAjAgWUxcMlRkJAEfJ7mgh-qOIovfaBhdN1CcJKuM74G8LFeXy5UvR_1Q"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"senderUsername\":\"ron_1\",\r\n\"password\":\"0123\",\r\n\"cash\":3000,\r\n\"receiverUserName\":\"mark_1\",\r\n\"receiverPhone\":\"0100000\"\r\n        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5026/Cash/sendCash"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
